@@ -8,8 +8,8 @@ import io
 app = FastAPI()
 
 # Load models once
-gender_model = tf.keras.models.load_model('gender_model_final.h5')
-skin_tone_model = tf.keras.models.load_model('skin_tone_model.h5')
+gender_model = tf.keras.models.load_model(r"C:\Users\akula\OneDrive\Desktop\GitHub\file\best_model.h5")
+skin_tone_model = tf.keras.models.load_model(r"C:\Users\akula\OneDrive\Desktop\GitHub\file\skin_tone_model.h5")
 
 @app.get("/")
 async def root():
